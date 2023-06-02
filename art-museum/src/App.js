@@ -9,7 +9,7 @@ function App() {
       <h1>Hello from App</h1>
       <GalleryNavigation galleries={harvardArt.records} />
       <Switch>
-        <Route exact path="/galleries/:galleryId">
+        <Route path="/galleries/:galleryId">
           <GalleryView galleries={harvardArt.records}/>  
         </Route>
         <Route exact path="/">
